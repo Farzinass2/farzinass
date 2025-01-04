@@ -28,10 +28,12 @@ import pages.QALegendAddProject;
 import pages.QALegendClientPage;
 import pages.QALegendEstimateTest;
 import pages.QALegendHomePage;
+import pages.QALegendInvoiceTest;
 import pages.QALegendItemTest;
 import pages.QALegendMessageTest;
 import pages.QALegendNotePage1;
 import pages.QALegendNotesPage;
+import pages.QALegendProjectPage;
 import pages.QALegendTicketPage;
 import pages.QALegendLoginPage;
 import pages.QALegendLoginPage1;
@@ -47,7 +49,7 @@ public class Base {
 	
     QALegendNotesPage notepage;
 	QALegendClientPage clientpage;
-	QALegendAddProject addprojectpage;
+	QALegendProjectPage projectpage;
 	QALegendItemTest itempage;
 	QALegendEstimateTest estimatepage;
 	QALegendTicketPage ticketpage;
@@ -55,6 +57,7 @@ public class Base {
 	QALegendLoginPage1 loginpage1;
 	QALegendNotePage1 notepage1;
 	QALegendAddEvent eventpage;
+	QALegendInvoiceTest invoicepage;
 	
 	@BeforeMethod(alwaysRun =true)
 	@Parameters({"browser"})
@@ -88,7 +91,7 @@ public class Base {
 
 	    notepage=new QALegendNotesPage(driver);
 		messagepage=new QALegendMessageTest(driver);
- 	addprojectpage=new QALegendAddProject(driver);
+ 	projectpage=new QALegendProjectPage(driver);
 	estimatepage=new QALegendEstimateTest(driver);
 	ticketpage=new QALegendTicketPage(driver);
 	loginpage1=new QALegendLoginPage1(driver);

@@ -70,6 +70,42 @@ public void ClickOn_SignOut() {
 	Dropdownbutton.click();
 }
 
+
+public void clickOnHomePageEventButton() {
+	Dropdownbutton.click();
+	
+}
+
+
+public void clickOnHomePageClientButton() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+public void clickOnHomePageNoteButton() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+public void clickonHomePageMessageButton() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+public void clickonHomePageInvoiceButton() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+public void clickonHomeProjectButton() {
+	// TODO Auto-generated method stub
+	
+}
+
 	
 	
 }

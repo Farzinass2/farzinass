@@ -28,6 +28,8 @@ public class QALegendClientPage {
 	private WebElement client_address;
 	private WebElement addclientsaveButton;
 	private WebElement editclientsaveButton;
+	private WebElement client_zip;
+	private WebElement addClientButton;
 	
 	
 	
@@ -38,36 +40,38 @@ public class QALegendClientPage {
 		PageFactory.initElements(driver, this);
 		
 	}
-	public  String addClient(String companyname,String address,String city,String state,int zip,String country,int phone,String website,int vatnumber,String clientgroups,int currency,int currencysymbol)
+	public void clickonAddClientButton()
 	{
+		pageutilities.ClickOnElement(addClientButton);
+	}
+	public  String addClient(String companyname,String address,String city,String state,CharSequence[] zip)
+	{
+		
 		pageutilities.enterTextOnWebElement(client_companyname,companyname);
 		pageutilities.enterTextOnWebElement(client_address, address);
 		pageutilities.enterTextOnWebElement(client_city, city);
 		pageutilities.enterTextOnWebElement(client_state, state);
-		
-		pageutilities.enterTextOnWebElement(client_country, country);
-		
-		pageutilities.enterTextOnWebElement(client_website, website);
-		
-		
-
+	    pageutilities.enterTextOnWebElement(client_zip, zip);
 		pageutilities.ClickOnElement(addclientsaveButton);
 		return companyname;
 		}
-	public String editClient(String companyname,String address,String city,String state,int zip,String country,int phone,String website,int vatnumber,String clientgroups,int currency,int currencysymbol)
+	public String editClient(String companyname,String address,String city,String state,CharSequence[] zip)
 	{
+		
 		pageutilities.enterTextOnWebElement(client_companyname,companyname);
 		pageutilities.enterTextOnWebElement(client_address, address);
 		pageutilities.enterTextOnWebElement(client_city, city);
 		pageutilities.enterTextOnWebElement(client_state, state);
 		
-		pageutilities.enterTextOnWebElement(client_country, country);
-		
-		pageutilities.enterTextOnWebElement(client_website, website);
-		
-		
+		pageutilities.enterTextOnWebElement(client_zip, zip);
 		pageutilities.ClickOnElement(editclientsaveButton);
 		return companyname;
+	}
+	public boolean editClientsaveButtonstatuschecker()
+	{
+		return (pageutilities.isElementEnabled(addclientsaveButton));
+		
+		
 	}
 	public void clickon_delete() {
 		// TODO Auto-generated method stub
@@ -89,6 +93,15 @@ public class QALegendClientPage {
 	public void clickEditClientButton() {
 		// TODO Auto-generated method stub
 		
+	}
+	public void addClient(String add_client_companyname, String add_client_companyaddress, String add_client_city,
+			String add_client_state, String add_client_zip) {
+		// TODO Auto-generated method stub
+		
+	}
+	public Object getNoteTitle() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 		
 	}

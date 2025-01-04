@@ -6,16 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Utilities.ExcelUtility;
 import Utilities.FakerUtility;
 
 public class QALegendNoteTest extends Base {
 	public WebDriver driver;
+	private Object UploadFile;
 	@Test
 	public void addNote() throws AWTException, InterruptedException {
 		loginpage.loginToQALegend(properties.getProperty("username"),properties.getProperty("password"));
+		homepage.clickOnHomePageNoteButton();
 		notepage.clickAddNoteButton();
-		String noteTitle=notepage.addNote(properties.getProperty("title")+FakerUtility.randomNumberGenerator(), properties.getProperty("description")+FakerUtility.randomNumberGenerator()); 
-		Thread.sleep(2000);
+		String noteTitle=ExcelUtility.getStringData(1, 0, "Note")+ FakerUtility.randomNumberGenerator(); 
+		String noteDescription=ExcelUtility.getStringData(1,1,"Note");
+		UploadFile.click();
+		notepage.clickOnAddNoteSaveButton();
 		Assert.assertEquals(notepage.getNoteTitle(),true);
 		
 	}
@@ -25,7 +30,8 @@ public class QALegendNoteTest extends Base {
 	{
 		loginpage.loginToQALegend(properties.getProperty("username"),properties.getProperty("password"));
 		notepage.clickEditNoteButton();
-		String noteTitle=notepage.addNote(properties.getProperty("title")+FakerUtility.randomNumberGenerator(), properties.getProperty("description")+FakerUtility.randomNumberGenerator()); 
+		String noteTitle=ExcelUtility.getStringData(1, 0, "Note")+ FakerUtility.randomNumberGenerator(); 
+		String noteDescription=ExcelUtility.getStringData(1,1,"Note");
 		Thread.sleep(2000);
 		Assert.assertEquals(notepage.getNoteTitle(),true);
 		

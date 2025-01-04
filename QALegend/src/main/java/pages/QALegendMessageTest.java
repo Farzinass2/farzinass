@@ -41,6 +41,20 @@ public class QALegendMessageTest {
 	public void SentItemsButton() {
 		sentitemsbutton.click();
 	}
+
+
+
+	public void composingMessage(String userforMessaging, String messageText) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	public String valdatingMessageSent(String userforMessaging) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

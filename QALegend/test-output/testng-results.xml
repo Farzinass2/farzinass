@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-23T17:02:42Z" name="Suite" finished-at="2024-12-23T17:02:43Z" duration-ms="427">
+  <suite started-at="2024-12-29T08:04:13Z" name="Suite" finished-at="2024-12-29T08:04:13Z" duration-ms="265">
     <groups>
     </groups>
-    <test started-at="2024-12-23T17:02:42Z" name="Test" finished-at="2024-12-23T17:02:43Z" duration-ms="427">
+    <test started-at="2024-12-29T08:04:13Z" name="Test" finished-at="2024-12-29T08:04:13Z" duration-ms="265">
       <class name="testScript.QALegendLoginTest1">
-        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testScript.QALegendLoginTest1@48bb62]" started-at="2024-12-23T22:32:42Z" name="browserintialization" finished-at="2024-12-23T22:32:42Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testScript.QALegendLoginTest1@cecf639]" started-at="2024-12-29T13:34:13Z" name="browserintialization" finished-at="2024-12-29T13:34:13Z" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserintialization -->
-        <test-method signature="invalidLogin()[pri:0, instance:testScript.QALegendLoginTest1@48bb62]" started-at="2024-12-23T22:32:43Z" name="invalidLogin" finished-at="2024-12-23T22:32:43Z" duration-ms="2" status="SKIP">
+        <test-method signature="invalidLogin()[pri:0, instance:testScript.QALegendLoginTest1@cecf639]" started-at="2024-12-29T13:34:13Z" name="invalidLogin" finished-at="2024-12-29T13:34:13Z" duration-ms="1" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html]]>
@@ -106,11 +106,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.QALegendLoginTest1@48bb62]" started-at="2024-12-23T22:32:43Z" name="afterMethod" finished-at="2024-12-23T22:32:43Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.QALegendLoginTest1@cecf639]" started-at="2024-12-29T13:34:13Z" name="afterMethod" finished-at="2024-12-29T13:34:13Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testScript.QALegendLoginTest1@48bb62]" started-at="2024-12-23T22:32:43Z" name="browserintialization" finished-at="2024-12-23T22:32:43Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testScript.QALegendLoginTest1@cecf639]" started-at="2024-12-29T13:34:13Z" name="browserintialization" finished-at="2024-12-29T13:34:13Z" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -163,7 +163,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserintialization -->
-        <test-method signature="validLogin()[pri:0, instance:testScript.QALegendLoginTest1@48bb62]" started-at="2024-12-23T22:32:43Z" name="validLogin" finished-at="2024-12-23T22:32:43Z" duration-ms="2" status="SKIP">
+        <test-method signature="validLogin()[pri:0, instance:testScript.QALegendLoginTest1@cecf639]" started-at="2024-12-29T13:34:13Z" name="validLogin" finished-at="2024-12-29T13:34:13Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html]]>
@@ -209,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.QALegendLoginTest1@48bb62]" started-at="2024-12-23T22:32:43Z" name="afterMethod" finished-at="2024-12-23T22:32:43Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.QALegendLoginTest1@cecf639]" started-at="2024-12-29T13:34:13Z" name="afterMethod" finished-at="2024-12-29T13:34:13Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

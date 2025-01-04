@@ -84,6 +84,11 @@ public class QALegendNotesPage {
 			// TODO Auto-generated method stub
 			
 		}
+
+		public void clickOnAddNoteSaveButton() {
+			// TODO Auto-generated method stub
+			
+		}
 			}
 		
 		
