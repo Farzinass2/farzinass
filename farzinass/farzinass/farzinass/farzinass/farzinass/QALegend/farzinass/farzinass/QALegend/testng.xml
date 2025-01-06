@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="chrome"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <!-- <class name="testScript.QALegendLeaveTest"/>
+      <class name="testScript.QAlegendSignoutTest1"/>
+      <class name="testScript.QALegendEstimateTest"/>
+      <class name="testScript.QALegendItemPageTest"/>
+      <class name="testScript.QALegendMessagePageTest"/>
+      <class name="testScript.QALegendInvoiceTest"/>
+      <class name="testScript.QALegendItemPageTest1"/>
+      <class name="testScript.QALegendNotePageTest"/>
+      <class name="testScript.QALegendEventPageTest1"/>
+      <class name="testScript.QALegendAddProjectTest"/>
+      <class name="testScript.QAlegendAddMultipleTasks"/>
+      <class name="testScript.QALegendAddNoteTest"/>
+      <class name="testScript.QALegendClientPageTest1"/>-->
+      <class name="testScript.QALegendLoginTest1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
